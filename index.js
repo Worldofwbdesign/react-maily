@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
   res.send({ hi: 'there' })
 })
 
-app.listen(5000, () => console.log(`App is running at port ${PORT}`))
+app.listen(PORT, () => console.log(`App is running at port ${PORT}`))
