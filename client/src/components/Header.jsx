@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import Payments from './Payments'
 
 const Header = ({ auth }) => {
   const renderContent = () => {
@@ -9,10 +10,13 @@ const Header = ({ auth }) => {
         return 'Loading'
         break
       case false:
-        return <a href="auth/google">Login with Google</a>
+        return <li><a href="auth/google">Login with Google</a></li>
         break
       default:
-        return <a href="api/logout">Logout</a>
+        return [
+          <li key={1}><Payments/></li>,
+          <li key={2}><a href="api/logout">Logout</a></li>
+        ]
     } 
   }
 
@@ -25,7 +29,7 @@ const Header = ({ auth }) => {
           Emaily
         </Link>
         <ul id="nav-mobile" className="right">
-          <li>{renderContent()}</li>
+          {renderContent()}
         </ul>
       </div>
     </nav>
