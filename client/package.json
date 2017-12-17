@@ -17,6 +17,7 @@
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17",
     "react-stripe-checkout": "^2.6.3",
+    "redux-form": "^7.2.0",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {

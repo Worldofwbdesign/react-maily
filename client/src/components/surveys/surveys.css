@@ -1,0 +1,10 @@
+.survey-field {
+  display: block;
+  margin-top: 15px;
+}
+
+.field-error {
+  display: block;
+  color: red;
+  margin-bottom: 5px;
+}
