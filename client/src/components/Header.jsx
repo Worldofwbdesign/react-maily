@@ -8,10 +8,8 @@ const Header = ({ auth }) => {
     switch (auth) {
       case null:
         return 'Loading'
-        break
       case false:
         return <li><a href="auth/google">Login with Google</a></li>
-        break
       default:
         return [
           <li key={1}><Payments/></li>,
